@@ -2,6 +2,8 @@
 
 namespace KubernetesClient;
 
+use Symfony\Component\Yaml\Yaml;
+
 class Config
 {
     /**
@@ -102,7 +104,8 @@ class Config
             throw new \Exception('Config file does not exist: ' . $path);
         }
 
-        $yaml = yaml_parse_file($path);
+        $path = (\file_exists($path)? $path: null);
+        $yaml = (!empty($path)? Yaml::parseFile($path): null);
 
         $currentContextName = $yaml['current-context'];
         $context = null;

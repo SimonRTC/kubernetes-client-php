@@ -13,7 +13,7 @@
     "require": {
         "php": ">=7.2.0",
         "ext-json": "*",
-        "ext-yaml": "*"
+        "symfony/yaml": "^5.0"
     },
     "suggest": {
         "ext-pcntl": "support forking of watches"

@@ -1,5 +1,5 @@
 {
-    "name": "travisghansen/kubernetes-client-php",
+    "name": "simonrtc/kubernetes-client-php",
     "type": "library",
     "description": "Kubernetes API client in PHP supporting REST operations and Watches",
     "license": "Apache-2.0",
